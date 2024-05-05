@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap v05 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>Egypt</title>
+</head>
+
+<body>
+
+    <!-- start aside -->
+    <aside>
+        <div class="position-fixed top-50 end-0 translate-middle" style="z-index: 5;">
+            <a href="" class="text-decoration-none"><i class="fa-brands fa-square-facebook color-facebook bg-white rounded ps-1 pe-1 mb-3 shadow display-5 d-block"></i></a>
+            <a href="" class="text-decoration-none"><i class="fa-brands fa-square-whatsapp color-whatsapp bg-white rounded ps-1 pe-1 mb-3 shadow display-5 d-block"></i></a>
+            <a href="" class="text-decoration-none"><i class="fa-brands fa-square-twitter color-twitter bg-white rounded ps-1 pe-1 mb-3 shadow display-5 d-block"></i></a>
+            <a href="" class="text-decoration-none"><i class="fa-brands fa-linkedin color-linkedin bg-white rounded ps-1 pe-1 mb-3 shadow display-5 d-block"></i></a>
+            <a href="" class="text-decoration-none"><i class="fa-brands fa-square-instagram color-instagram bg-white rounded ps-1 pe-1 mb-3 shadow display-5 d-block"></i></a>
+        </div>
+    </aside>
+    <!-- end aside -->
+
+    <!-- start header -->
+    <header>
+        <nav class="navbar navbar-expand-md bg-light">
+            <div class="container-fluid">
+                <a href="" class="text-decoration-none border-end border-danger p-2 ps-4">
+                    <i class="fa-solid fa-mountain-sun h4 text-color-gradient"> Egypt</i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <i class="fa-solid fa-bars text-success fs-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mt-3 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 me-3 ms-md-3">
+                            <a href="" class="btn btn-outline-success active">Home</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 me-3">
+                            <a href="" class="btn btn-outline-success">Link</a>
+                        </li>
+                        
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-success dropdown-toggle mt-3 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 me-3"
+                                data-bs-toggle="dropdown">
+                                Trips
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Cairo</a></li>
+                                <li><a class="dropdown-item" href="#">Alex</a></li>
+                                <li><a class="dropdown-item" href="#">Luxur</a></li>
+                                <li><a class="dropdown-item" href="#">Aswan</a></li>
+                                <li><a class="dropdown-item" href="#">Tanta</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">More...</a></li>
+                            </ul>
+                        </div>
+
+                        <li class="nav-item mt-3 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0 mb-3 mb-md-0 mb-lg-0 mb-xl-0 mb-xxl-0 me-3">
+                            <a href="" class="btn btn-outline-success">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control border-success me-2" type="text"
+                            placeholder="Search">
+                        <button class="btn btn-success" type="button">Search</button>
+                        <button class="btn btn-success ms-2" type="button" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Login</button>
+
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header bg-success">
+                                        <h4 class="modal-title text-white">Login</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <div class="mb-3 mt-3">
+                                            <label for="email" class="form-label text-success">Email Address</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Enter email" name="email">
+                                            <p>We'll never share your e-mail with anyone else</p>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="pwd" class="form-label text-success">Password</label>
+                                            <input type="password" class="form-control" id="pwd"
+                                                placeholder="Enter password" name="pswd">
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <label class="form-check form-switch">
+                                                <input class="form-check-input bg-body-success" type="checkbox"
+                                                    id="flexSwitchCheckChecked" checked>
+                                                <label class="form-check-label" for="flexSwitchCheckChecked"> Remember
+                                                    Me</label>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success">Login</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+
+
+    <!-- start main -->
+    <main>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/main_01.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h2>The Pyramids of Egypt</h2>
+                        <p>timeless monuments to ancient engineering and human ambition.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/main_02.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h2>The Nile River</h2>
+                        <p>The Nile River is the lifeblood, nourishing its lands and shaping its history
+                            for millennia.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/main_03.jpg" alt="New York" class="d-block" style="width:100%">
+                    <div class="carousel-caption">
+                        <h2>The Mosques of Egypt</h2>
+                        <p>Characterized by intricate geometric patterns, towering minarets, and serene
+                            courtyards
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+    </main>
+    <!-- end main -->
+
+
+    <!-- start Welcome sec-->
+    <section class="Welcome container-fluid bg-success-50 text-white p-5 rounded-bottom shadow">
+        <div class="h2 text-success">Welcome</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, harum sint quidem commodi nam repellat
+            eaque, consequuntur, aperiam facere dolore voluptas! Similique voluptatem excepturi, blanditiis nobis
+            maiores deleniti impedit dolore?</p>
+        <button class="btn btn-light text-success">Learn More</button>
+    </section>
+    <!-- end Welcome sec-->
+
+    <hr>
+
+    <!-- start Popular sec -->
+    <section class="bg-success-50 pb-4 shadow">
+        <div class="Popular container-fluid bg-success pt-2 pb-2 rounded">
+            <p class="h2 text-center text-white text-color-gradient fs-1">Popular Destinations in Egypt</p>
+        </div>
+
+        <div class="accordion ps-5 pe-5 mt-3" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs-5 fw-bold rounded shadow-lg text-success" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        The Pyramids of Egypt
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body fw-light">
+                        The Pyramids of Egypt stand as timeless monuments to ancient engineering and human ambition.
+                        Built
+                        over 4,500 years ago, these colossal structures were constructed as tombs for the pharaohs,
+                        serving
+                        as gateways to the afterlife. The most famous of these pyramids, the Great Pyramid of Giza, is a
+                        marvel of precision engineering, comprising millions of limestone blocks weighing several tons
+                        each.
+                        Their enduring mystery continues to captivate the imagination of people around the world,
+                        drawing
+                        millions of visitors each year to witness their grandeur firsthand.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fs-5 fw-bold rounded shadow-lg text-success" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        The Nile River
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body fw-light">
+                        The Nile River is the lifeblood of Egypt, nourishing its lands and shaping its history for
+                        millennia. Stretching over 6,600 kilometers, it is the longest river in the world, flowing
+                        through
+                        Egypt from south to north. Each year, the annual flooding of the Nile deposits nutrient-rich
+                        silt
+                        along its banks, creating fertile soil that sustains agriculture and supports civilization.
+                        Beyond
+                        its practical significance, the Nile holds cultural and spiritual significance for the Egyptian
+                        people, inspiring art, literature, and religion throughout the ages.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fs-5 fw-bold rounded shadow-lg text-success" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        The Mosques of Egypt
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body fw-light">
+                        Egypt is home to a rich tapestry of Islamic architecture, with mosques that reflect centuries of
+                        cultural exchange and artistic expression. From the grandeur of the Mosque of Muhammad Ali in
+                        Cairo
+                        to the historic Al-Azhar Mosque, these sacred spaces serve as both places of worship and
+                        cultural
+                        landmarks. Characterized by intricate geometric patterns, towering minarets, and serene
+                        courtyards,
+                        Egyptian mosques embody the principles of Islamic art and architecture. They stand as symbols of
+                        faith, community, and devotion, welcoming worshippers and visitors alike to experience the
+                        beauty of
+                        Islamic heritage.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Popular sec -->
+
+    <hr>
+
+    <!-- start Translate English -->
+    <section class="bg-success-50 shadow">
+        <div class="container-fluid bg-success rounded pt-2 pb-2 shadow">
+            <p class="h2 text-white text-center text-color-gradient fs-1">Translate from Arabic to English</p>
+        </div>
+        <form action="/action_page.php" class="ps-5 pe-5 pt-3 pb-3 rounded">
+            <p class="h4 text-white">Write and translate <span class="text-warning"> Press here</span></p>
+            <button type="button" class="btn btn-light text-success fw-bold" data-bs-toggle="modal"
+                data-bs-target="#CopyModal" title="Copy to Clipboard">Copy</button>
+            <div class="mb-3 mt-3">
+                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Translate"></textarea>
+            </div>
+        </form>
+
+
+        <!-- The Modal -->
+        <div class="modal fade" id="CopyModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Copy message</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        The message has been copied...
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Translate English -->
+
+    <hr>
+
+    <!-- start Translate Frensh -->
+    <section class="bg-success-50 shadow">
+        <div class="container-fluid bg-success rounded pt-2 pb-2 shadow">
+            <p class="h2 text-white text-center text-color-gradient fs-1">Translate from Arabic to Frensh</p>
+        </div>
+        <form action="/action_page.php" class="ps-5 pe-5 pt-3 pb-3 rounded">
+            <p class="h4 text-white">Write and translate <span class="text-warning"> Press here</span></p>
+            <button type="button" class="btn btn-light text-success fw-bold" data-bs-toggle="modal"
+                data-bs-target="#CopyModal" title="Copy to Clipboard">Copy</button>
+            <div class="mb-3 mt-3">
+                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Translate"></textarea>
+            </div>
+        </form>
+
+
+        <!-- The Modal -->
+        <div class="modal fade" id="CopyModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Copy message</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        The message has been copied...
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Translate Frensh -->
+
+    <hr>
+
+    <!-- start Translate German -->
+    <section class="bg-success-50 shadow">
+        <div class="container-fluid bg-success rounded pt-2 pb-2 shadow">
+            <p class="h2 text-white text-center text-color-gradient fs-1">Translate from Arabic to German</p>
+        </div>
+        <form action="/action_page.php" class="ps-5 pe-5 pt-3 pb-3 rounded">
+            <p class="h4 text-white">Write and translate <span class="text-warning"> Press here</span></p>
+            <button type="button" class="btn btn-light text-success fw-bold" data-bs-toggle="modal"
+                data-bs-target="#CopyModal" title="Copy to Clipboard">Copy</button>
+            <div class="mb-3 mt-3">
+                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Translate"></textarea>
+            </div>
+        </form>
+
+
+        <!-- The Modal -->
+        <div class="modal fade" id="CopyModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Copy message</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        The message has been copied...
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Translate German -->
+
+    <!-- start bg img 01 -->
+    <section style="height: 300px;">
+        <div class="photo1 container-fluid h-100"></div>
+    </section>
+    <!-- end bg img 01 -->
+
+    <!-- start Grid sec -->
+    <section class="grid-sec bg-success-50 shadow">
+        <div class="container-fluid bg-success rounded pt-2 pb-2 shadow">
+            <p class="h2 text-white text-center text-color-gradient fs-1">Popular destinations in Egypt</p>
+        </div>
+
+        <div class="container-fluid row justify-content-evenly gap-4 p-5">
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 .col-xl-3 .col-xxl-3 p-1 shadow">
+                <img class="card-img-top" src="images/Grid Section/El-Azhar.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-success">El-Azhar Mosque</h4>
+                    <p class="card-text">El-Azhar Mosque stands as a symbol of Islamic scholarship and architectural beauty.
+                    </p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 .col-xl-3 .col-xxl-3 p-1 shadow">
+                <img class="card-img-top" src="images/Grid Section/The Pyramids.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-success">The Pyramids</h4>
+                    <p class="card-text">The Pyramids of Egypt stand as timeless monuments to ancient engineering and
+                        human ambition.
+                    </p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 .col-xl-3 .col-xxl-3 p-1 shadow">
+                <img class="card-img-top" src="images/Grid Section/Karnak Temple.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-success">Karnak Temple</h4>
+                    <p class="card-text">The Karnak Temple Complex in Luxor is a testament to Egypt's ancient grandeur.
+                    </p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 .col-xl-3 .col-xxl-3 p-1 shadow">
+                <img class="card-img-top" src="images/Grid Section/Abu Simbel Temple.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-success">Abu Simbel Temple</h4>
+                    <p class="card-text">The Abu Simbel Temples, located in southern Egypt, are magnificent rock-cut temples.
+                    </p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 .col-xl-3 .col-xxl-3 p-1 shadow">
+                <img class="card-img-top" src="images/Grid Section/QaitbeyCitadel.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-success">Qaitbay Citadel</h4>
+                    <p class="card-text">The Citadel of Qaitbay is a 15th-century defensive fortress located on Alexandria.
+                    </p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 .col-xl-3 .col-xxl-3 p-1 shadow">
+                <img class="card-img-top" src="images/Grid Section/Egyptian Museum.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-success">Egyptian Museum</h4>
+                    <p class="card-text">The Egyptian Museum in Cairo houses a vast collection of ancient artifacts and treasures.
+                    </p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 .col-xl-3 .col-xxl-3 p-1 shadow">
+                <img class="card-img-top" src="images/Grid Section/Nile River.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-success">Nile River</h4>
+                    <p class="card-text">The Nile River is Egypt's lifeline, nurturing its lands and shaping its history.
+                    </p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 .col-xl-3 .col-xxl-3 p-1 shadow">
+                <img class="card-img-top" src="images/Grid Section/Cairo Tower.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-success">Cairo Tower</h4>
+                    <p class="card-text">It provides a bird's-eye view of Cairo's iconic landmarks and vibrant neighborhoods.
+                    </p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 .col-xl-3 .col-xxl-3 p-1 shadow">
+                <img class="card-img-top" src="images/Grid Section/Amr Ibn El-Aas.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-success">Amr Ibn El-Aas</h4>
+                    <p class="card-text">The Amr Ibn El-Aas Mosque holds the distinction of being Egypt's first mosque.
+                    </p>
+                    <a href="#" class="btn btn-success">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end Grid sec -->
+
+    <!-- start bg img 02 -->
+    <section style="height: 300px;">
+        <div class="photo2 container-fluid h-100"></div>
+    </section>
+    <!-- end bg img 02 -->
+
+    <!-- start thanks sec -->
+    <section class="thanks bg-success-50 shadow">
+        <div class="container-fluid bg-success rounded pt-2 pb-2 mb-5 shadow">
+            <p class="h2 fs-1 text-center text-color-gradient">Thanks For</p>
+        </div>
+
+        <div class="container-fluid row justify-content-evenly gap-4 pb-5 ps-5 pe-5">
+
+            <div class="card img-fluid col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 shadow"
+                style="width: 350px;">
+                <img class="card-img" src="images/Thanks_01.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay text-white ps-5">
+                    <p class="card-text h5">Some example text some example text.</p>
+                    <p class="small"><i class="fa-regular fa-clock"></i> Oct 12, 2023</p>
+                    <img class="card-img rounded-circle border" src="images/Thanks_01.jpg" alt="Card image"
+                        style="width:35%">
+                    <h4 class="card-title">John Doe</h4>
+                    <p>Front-end Developer</p>
+                </div>
+            </div>
+
+            <div class="card img-fluid col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 shadow"
+                style="width: 350px;">
+                <img class="card-img" src="images/Thanks_02.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay text-white ps-5">
+                    <p class="card-text h5">Some example text some example text.</p>
+                    <p class="small"><i class="fa-regular fa-clock"></i> Oct 12, 2023</p>
+                    <img class="card-img rounded-circle border" src="images/Thanks_02.jpg" alt="Card image"
+                        style="width:35%">
+                    <h4 class="card-title">John Doe</h4>
+                    <p>Back-end Developer</p>
+                </div>
+            </div>
+
+            <div class="card img-fluid col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3 shadow"
+                style="width: 350px;">
+                <img class="card-img" src="images/Thanks_03.jpg" alt="Card image" style="width:100%">
+                <div class="card-img-overlay text-white ps-5">
+                    <p class="card-text h5">Some example text some example text.</p>
+                    <p class="small"><i class="fa-regular fa-clock"></i> Oct 12, 2023</p>
+                    <img class="card-img rounded-circle border" src="images/Thanks_03.jpg" alt="Card image"
+                        style="width:35%">
+                    <h4 class="card-title">John Doe</h4>
+                    <p>Full-stack Developer</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end thanks sec -->
+
+    <hr>
+
+    <!-- start news -->
+    <section class="news bg-success-50 shadow">
+        <div class="container-fluid bg-success rounded pt-2 pb-2 shadow">
+            <p class="h2 fs-1 text-center text-color-gradient">Egypt News</p>
+        </div>
+
+        <div class="container-fluid row justify-content-center gap-4 p-5">
+
+            <div class="card col-10 shadow">
+                <div class="row  overflow-hidden">
+                    <div class="img-card img-right rounded col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+                    <div class="card-body col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                        <div>
+                            <h2 class="card-title">Podcast Title</h2>
+                            <p class="small pb-2"><i class="fa-regular fa-clock"></i> Mon , 17 Oct 2024</p>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quas
+                            culpa perferendis sit ducimus quod beatae, repellat sint laboriosam, omnis a voluptate
+                            mollitia dignissimos? Temporibus qui totam quos doloremque aliquid.</p>
+                        <span class="badge"><i class="fa-solid fa-podcast"></i> Podcast</span>
+                        <span class="badge"><i class="fa-regular fa-clock"></i> 55 min</span>
+                        <span class="badge"><i class="fa-solid fa-play"></i> Play</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-10 shadow">
+                <div class="row  overflow-hidden">
+                    <div class="img-card img-left rounded col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+                    <div class="card-body col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                        <div>
+                            <h2 class="card-title">Podcast Title</h2>
+                            <p class="small pb-2"><i class="fa-regular fa-clock"></i> Mon , 17 Oct 2024</p>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quas
+                            culpa perferendis sit ducimus quod beatae, repellat sint laboriosam, omnis a voluptate
+                            mollitia dignissimos? Temporibus qui totam quos doloremque aliquid.</p>
+                        <span class="badge"><i class="fa-solid fa-podcast"></i> Podcast</span>
+                        <span class="badge"><i class="fa-regular fa-clock"></i> 55 min</span>
+                        <span class="badge"><i class="fa-solid fa-play"></i> Play</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-10 shadow">
+                <div class="row  overflow-hidden">
+                    <div class="img-card img-right rounded col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+                    <div class="card-body col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                        <div>
+                            <h2 class="card-title">Podcast Title</h2>
+                            <p class="small pb-2"><i class="fa-regular fa-clock"></i> Mon , 17 Oct 2024</p>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quas
+                            culpa perferendis sit ducimus quod beatae, repellat sint laboriosam, omnis a voluptate
+                            mollitia dignissimos? Temporibus qui totam quos doloremque aliquid.</p>
+                        <span class="badge"><i class="fa-solid fa-podcast"></i> Podcast</span>
+                        <span class="badge"><i class="fa-regular fa-clock"></i> 55 min</span>
+                        <span class="badge"><i class="fa-solid fa-play"></i> Play</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-10 shadow">
+                <div class="row  overflow-hidden">
+                    <div class="img-card img-left rounded col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+                    <div class="card-body col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                        <div>
+                            <h2 class="card-title">Podcast Title</h2>
+                            <p class="small pb-2"><i class="fa-regular fa-clock"></i> Mon , 17 Oct 2024</p>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quas
+                            culpa perferendis sit ducimus quod beatae, repellat sint laboriosam, omnis a voluptate
+                            mollitia dignissimos? Temporibus qui totam quos doloremque aliquid.</p>
+                        <span class="badge"><i class="fa-solid fa-podcast"></i> Podcast</span>
+                        <span class="badge"><i class="fa-regular fa-clock"></i> 55 min</span>
+                        <span class="badge"><i class="fa-solid fa-play"></i> Play</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end news -->
+
+    <hr>
+
+    <!-- start join us -->
+    <section class="join-us bg-success-50 shadow">
+        <div class="container-fluid bg-success rounded pt-2 pb-2 shadow">
+            <p class="h2 fs-1 text-center text-color-gradient">Join Us</p>
+        </div>
+
+        <div class="container-fluid row justify-content-center gap-4 p-5">
+
+            <div style="width: 230px;"
+                class="bg-success text-center p-3 shadow rounded col-10 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <h3 class="text-white">Follow Us</h3>
+                <i
+                    class="fa-brands fa-square-twitter color-twitter bg-white rounded ps-1 pe-1 shadow display-2 mt-1 mb-2"></i>
+                <a class="d-block fs-5 text-decoration-none text-warning" href="">Link Of Page</a>
+            </div>
+
+            <div style="width: 230px;"
+                class="bg-success text-center p-3 shadow rounded col-10 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <h3 class="text-white">Follow Us</h3>
+                <i
+                    class="fa-brands fa-linkedin color-linkedin bg-white rounded ps-1 pe-1 shadow display-2 mt-1 mb-2"></i>
+                <a class="d-block fs-5 text-decoration-none text-warning" href="">Link Of Page</a>
+            </div>
+
+            <div style="width: 230px;"
+                class="bg-success text-center p-3 shadow rounded col-10 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <h3 class="text-white">Follow Us</h3>
+                <i
+                    class="fa-brands fa-square-facebook color-facebook bg-white rounded ps-1 pe-1 shadow display-2 mt-1 mb-2"></i>
+                <a class="d-block fs-5 text-decoration-none text-warning" href="">Link Of Page</a>
+            </div>
+
+            <div style="width: 230px;"
+                class="bg-success text-center p-3 shadow rounded col-10 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                <h3 class="text-white">Follow Us</h3>
+                <i
+                    class="fa-brands fa-square-whatsapp color-whatsapp bg-white rounded ps-1 pe-1 shadow display-2 mt-1 mb-2"></i>
+                <a class="d-block fs-5 text-decoration-none text-warning" href="">Link Of Page</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- end join us -->
+
+    <hr>
+
+    <!-- start footer -->
+    <footer class="bg-success p-3">
+        <div class="row justify-content-center">
+
+            <div class="text-center text-white col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <hr>
+                <img src="images/Footer.jpg" alt="" class="rounded-circle shadow"
+                    style="width: 80px; height: 80px;">
+                <span class="fs-5 text-nowrap">Good Company</span>
+                <hr>
+                <p>Tel : 000 000 000</p>
+                <p>Address : Egypt</p>
+                <p>Fax : 000 000 000</p>
+            </div>
+
+            <div class="text-center col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <hr class="text-white">
+                <img src="images/Footer.jpg" alt="" class="rounded-circle shadow"
+                    style="width: 80px; height: 80px;">
+                <span class="fs-5 text-nowrap text-white">Important Links</span>
+                <hr class="text-white">
+                <a href="" class="link-warning text-decoration-none">
+                    <p>Visit Us</p>
+                </a>
+                <a href="" class="link-warning text-decoration-none">
+                    <p>Take alook</p>
+                </a>
+                <a href="" class="link-warning text-decoration-none">
+                    <p>Your health is more important</p>
+                </a>
+            </div>
+
+            <div class="text-center text-white col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <hr>
+                <img src="images/Footer.jpg" alt="" class="rounded-circle shadow"
+                    style="width: 80px; height: 80px;">
+                <span class="fs-5 text-nowrap">Vision</span>
+                <hr>
+                <p>Serveices for all</p>
+                <p>Provide best serveices</p>
+                <p>You will be better than before</p>
+            </div>
+
+        </div>
+
+        <hr class="text-white">
+        <p class="h2 fs-3 text-center text-color-gradient text-capitalize">Copyright &#169; 2024. all right reserved be JOE</p>
+        <hr class="text-white">
+    </footer>
+    <!-- end footer -->
+
+    <!-- Bootstrap v05 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
